@@ -47,7 +47,9 @@ def victory(user):  # Функция победы
     xy2 = all([field[1][2] == user, field[2][1] == user, field[3][0] == user])
 
     if any([x1, x2, x3, y1, y2, y3, xy1, xy2]):     # Если одно из условий верное, то победа
-        print(f'\nПобедили {user}')
+        print(f'\n(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ Победили {user} ✧ﾟ･: *ヽ(◕ヮ◕ヽ)\n')
+        for num, sp in enumerate(field):
+            print(num, *sp)
         restart()                                   # Перезапуск/Завершение игры
 
 
